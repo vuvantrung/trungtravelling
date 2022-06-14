@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+.sticky-top {
+  position: -webkit-sticky;
+}
+.header {
+  background-image: url(https://media.istockphoto.com/photos/carnewas-and-bedruthan-steps-is-a-stretch-of-coastline-located-on-the-picture-id1208557898?b=1&k=6&m=1208557898&s=170667a&w=0&h=rcyEhYBEhhToxVqAQ3BWupZbhp6y_dHb6bfUx1Lwclk=);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 320px;
+  background-position: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-clip-path: ellipse(72% 62% at 51% 27%);
+          clip-path: ellipse(72% 62% at 51% 27%);
+  z-index: 1;
+}
+
+.header .z-index {
+  position: relative;
+  z-index: 2;
+}
+
+.header .curtain {
+  opacity: .2;
+  width: 100%;
+  height: 620px;
+  position: absolute;
+  z-index: -1;
+  background-color: black;
+}
+
+.header .nav-link {
+  color: white !important;
+}
+
+.header .nav-link:hover {
+  color: green !important;
+}
+
+.header .nav-link:active {
+  color: #2DC071 !important;
+}
+
+.header .active {
+  color: green !important;
+}
+
+.header .navbar-toggler {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.header .text {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  width: 50%;
+}
+
+.header .text a {
+  color: white;
+  letter-spacing: .7px;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: larger;
+  height: 0;
+}
+
+.header .text ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .text ul li {
+  margin-top: 40px;
+  margin-right: 30px;
+  margin-left: 40px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.header .text a i {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  color: white;
+}
+
+.header .text a:hover i {
+  color: teal;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.header .content-header {
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  left: 30%;
+}
+
+.header .btn-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .btn-header img {
+  position: absolute;
+  top: -13%;
+}
+
+.header .content-header h2 {
+  font-size: xx-large;
+  color: white;
+}
+.header .btn-header input {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 50px;
+  padding: 5px;
+  padding-left: 10px;
+  color: white;
+  border: black solid 2px;
+  outline: none;
+  background: none;
+}
+
+.header .btn-header button {
+  width: 13%;
+  height: 40px;
+  margin-left: 3px;
+  margin-top: 8px;
+  border-radius: 100%;
+  background-color: white;
+  border: none;
+  outline: none;
+  -webkit-transition: ease-in 0.4s;
+  transition: ease-in 0.4s;
+  -webkit-box-shadow: inset 0 0 0 0 green;
+          box-shadow: inset 0 0 0 0 green;
+}
+
+.header .btn-header button:hover {
+  -webkit-box-shadow: inset 0px 0px 50px 0px green;
+          box-shadow: inset 0px 0px 50px 0px green;
+}
+
+.header .navbar-nav {
+  padding-left: 50%;
+  font-size: 20px;
+}
+.body {
+    height: 600px;
+    width: 100%;
+    
+}
+.address {
+    position: relative;
+  }
+.address::after {
+    content: " ";
+    width: 20%;
+    height: 2px;
+    background-color: green;
+    bottom: -2px;
+    left: 0;
+    border-radius: 5px;
+    position: absolute;
+  }
+
+.icon-part-6 i {
+  margin-right: 10px;
+
+}
+@media only screen and (max-width: 767px) {
+    .body {
+        height: 650px;
+    }
+    .gmap_canvas {
+        height: 400px!important;
+        width: 470px!important;
+    }
+    .header .navbar-nav {
+      font-size: 20px;
+      position: relative;
+      z-index: 10;
+      padding-left: 0!important;
+    }
+    .header .nav-link {
+        color: black!important;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .body {
+        height: 1000px;
+    }
+    .gmap_canvas {
+        width: 300px!important;
+    }
+    .header .navbar-nav {
+      font-size: 20px;
+      position: relative;
+      z-index: 10;
+      padding-left: 0!important;
+    }
+    .header .nav-link {
+        color: black!important;
+    }
+}

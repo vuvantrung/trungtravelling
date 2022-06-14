@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    
+    
+    
+    <title>Travelling</title>
+</head>
+<body>
+    <div class="header">
+        <div class="curtain"></div>
+        <!-- navbar-1 -->
+        <nav class="navbar py-3 px-3 navbar-expand-lg navbar-light z-index" style="background: none; color: white;">
+            <div class="container-fluid">
+              <a href="./index.html" class="navbar-brand">
+                <img src="./logo2-removebg-preview.png" width="200px" height="50px">
+              </a>
+              <a href="#" class="cart navbar-toggler" style=" border: none;"><i class="fa fa-shopping-cart" style="color: rgba(0, 0, 0, 0.5);"></i></a>
+              <button class="navbar-toggler" onclick="togglerBtn()" style="border: none;"  data-bs-toggle="collapse" 
+              data-bs-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"  id="icon"></span>
+              </button>
+              
+                <!-- collapse -->
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto text-center">
+                  <li class="nav-item">
+                    <a href="./index.html" class="nav-link nav-link-main active"  aria-current="page">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./introducing.html" class="nav-link nav-link-main">Giới thiệu</a>
+                  </li>
+                  <li class="nav-item">
+
+                    <a href="./nuocngoai.html" class="nav-link nav-link-main">Hot</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./form.html" class="nav-link">Đăng kí</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+           
+          </nav>
+          <!-- thanh search -->
+             <div class="content-header">
+                <div class="btn-header">
+                    <input id="search" type="text" placeholder="tìm kiếm ở đây" >
+                    <button><i class="fa fa-search" ></i></button>
+                </div>
+          </div>
+        </div>
+       
+    
+    
+    <div class="body">
+         <!-- navbar-phu -->
+        <nav class="navbar py-3 px-3 navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html">
+                <img src="./logo2-removebg-preview.png" width="75px"  alt="">
+              </a>
+              <button class="navbar-toggler" onclick="togglerBtn2()" style="box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" id="icon2"></span>
+              </button>
+              <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
+                <div class="navbar-nav" style="font-size: 24px;">
+                  <a class="nav-link nav-phu active" aria-current="page" href="./trongnuoc.html"><i class="fa fa-plane"></i>Trong Nước</a>
+                  <a class="nav-link nav-phu"  href="./nuocngoai.html"><i class="fa fa-plane"></i>Nước Ngoài</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+            <!-- background -->
+                <div class="background-1"></div>
+                <div class="background-2"></div>
+                <div class="background-3"></div>
+                <div class="background-4"></div>
+                <div class="background-5"></div>
+    
+        <div class="container">
+            <!-- part-1 -->
+                <div class="part-1">
+                    <h2 class="text-center py-3">Welcome!</h2>
+                    <div class="d-sm-flex">
+                        <div class="left">
+                            <p>Du lịch là tất cả về khám phá những địa điểm mới, văn hóa, ẩm thực, nghi lễ và phong cách sống. Chúng ta cũng đi du lịch bởi vì khoảng cách và sự khác biệt kích thích sự tò mò của tất cả, điều mà chúng ta không thể quan sát bằng cách ngồi ở nhà. Bản thân việc đi du lịch có những lợi thế, vì nó khiến người ta quên đi những lo lắng, buồn rầu và thất vọng.</p>
+                            <p>Hãy đến với Paradise Of Traveling quý khách luôn được đón chào nồng nhiệt và được phục vụ chu đáo bởi một đội ngũ nhân viên đầy nhiệt huyết, năng động, trẻ trung, nhiều năm kinh nghiệm trong lĩnh vực du lịch.</p>
+                        </div>
+                        <div class="right">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/8nSQUYeCKqQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- part-2 -->
+                    <div class="part-2">
+                        <h2 class="py-3 text-center">Tại Sao Nên Chọn Chúng Tôi</h2>
+                        <p class="text-center">Nếu không thể tìm được bạn đồng hành, hãy tìm đến chúng tôi !</p>
+                        <div class="row row-part-2 ">
+                            <div class=" col-sm-6 col-lg-3 box-part-2">
+                                <div class="card card-part-2" style="width: 100%;">
+                                    <i class="fa fa-plane text-center py-3" style="font-size: 42px; color: green"></i>
+                                    <div class="card-body">
+                                      <p class="card-text">Bạn sẽ được thông báo ngay khi giá vé máy bay phù hợp với ngân sách của bạn, vì thế bạn có thể dễ dàng đặt vé máy bay với giá hợp lý vào thời điểm thích hợp.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class=" col-sm-6 col-lg-3 box-part-2">
+                                <div class="card card-part-2" style="width: 100%;">
+                                    <i class="fa fa-globe text-center py-3" style="font-size: 42px; color: green"></i>
+                                    <div class="card-body">
+                                      <p class="card-text">Một trong những công ty du lịch uy tín và được đông đảo khách hàng tin yêu, lựa chọn khi mua tour du lịch nước ngoài, mạng lưới khách sạn, visa, phủ sóng nhiều nơi trên thế giới.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class=" col-sm-6 col-lg-3 box-part-2">
+                                <div class="card card-part-2" style="width: 100%;">
+                                    <i class="fa fa-credit-card text-center py-3" style="font-size: 42px; color: green"></i>
+                                    <div class="card-body">
+                                      <p class="card-text">Nhằm tối ưu sự thuận tiện cho quý khách,chúng tôi cung cấp đa dạng hình thức thanh toán như sau: chuyển khoản ngân hàng, thu tiền tận nơi, thanh toán trực tiếp tại văn phòng.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class=" col-sm-6 col-lg-3 box-part-2">
+                                <div class="card card-part-2" style="width: 100%;">
+                                    <i class="fa fa-calendar text-center py-3" style="font-size: 42px; color: green;"></i>
+                                    <div class="card-body">
+                                      <p class="card-text">Nhằm kết nối với các khách hàng hơn nữa, chúng tôi có nhiều ưu đãi hấp dẫn như: tour giá rẻ, tặng kèm vé Buffet, tặng voucher giảm giá du lịch, free các dịch vụ cao cấp.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- carousel -->
+                    <div class="part-3">
+                        <h2 class="py-3 text-center">Hot Tour</h2>
+                        <div id="carouselExampleControls" class="carousel slide my-3" data-interval="100000">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <div class="pictures d-sm-flex">
+                                    <div class="pic">
+                                        <div class="overlay">
+                                            <div class="text"  style="font-size: 26px"><a href="chitiet.html">
+                                                Đà Lạt
+                                            </a></div>
+                                        </div>
+                                        <a href="chitiet.html">
+                                            <img src="img/dalat.jpg" width="100%" height="200px" style="border-radius: 100%;" class="d-block image" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="pic">
+                                        <div class="overlay">
+                                            <div class="text" style="font-size: 26px"><a href="#">
+                                                Sa Pa
+                                            </a></div>
+                                        </div>
+                                        <a href="#">
+                                            <img src="img/sapa.jpg" width="100%" height="200px" style="border-radius: 100%;" class="d-block image" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="pic">
+                                        <div class="overlay">
+                                            <div class="text" style="font-size: 26px"><a href="#">
+                                                Đà Nẵng
+                                            </a></div>
+                                        </div>
+                                        <a href="#">
+                                            <img src="img/dânng.jpg" width="100%" height="200px" style="border-radius: 100%;" class="d-block image" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="pic">
+                                        <div class="overlay">
+                                            <div class="text" style="font-size: 26px"><a href="#">
+                                                Phú Quốc
+                                            </a></div>
+                                        </div>
+                                        <a href="#">
+                                            <img src="img/phuquoc.jpg" width="100%" height="200px" style="border-radius: 100%;" class="d-block image" alt="...">
+                                        </a>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <div class="pictures d-sm-flex">
+                                    <div class="pic">
+                                        <div class="overlay">
+                                            <div class="text" style="font-size: 26px"><a href="#">
+                                                London
+                                            </a></div>
+                                        </div>
+                                        <a href="#">
+                                            <img src="img/london.jpg" width="100%" height="200px" style="border-radius: 100%;" class="d-block image" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="pic">
+                                        <div class="overlay">
+                                            <div class="text" style="font-size: 26px"><a href="#">
+                                                Pháp
+                                            </a></div>
+                                        </div>
+                                        <a href="#">
+                                            <img src="img/phap.jpg" width="100%" height="200px" style="border-radius: 100%;" class="d-block image" alt="...">
+                                        </a>
+                                    </div>
+                                    <div class="pic">
+                                        <div class="overlay">
+                                            <div class="text" style="font-size: 26px"><a href="#">
+                                                Thụy Sĩ
+                                            </a></div>
+                                        </div>
+                                        <a href="#"><img src="img/thuysi.jpg" width="100%" height="200px" style="border-radius: 100%;" class="d-block image" alt="..."></a>
+                                    </div>
+                                    <div class="pic">
+                                        <div class="overlay">
+                                            <div class="text" style="font-size: 26px">
+                                                USA
+                                            </div>
+                                        </div>
+                                        <a href="#">
+                                            <img src="img/my.jpg" width="100%" height="200px" style="border-radius: 100%;" class="d-block image" alt="...">
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev nutbam nutbam-manHinhNghieng" type="button" style="background-color: black; width: 50px; height: 50px; margin-top: 80px;" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next nutbam nutbam-manHinhNghieng2" type="button" style="background-color: black; width: 50px; height: 50px; margin-top: 80px;" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <!-- part-4 -->
+                    <div class="part-4">
+                      <h2 class="text-center py-3">Du lịch yêu thích</h2>
+                      <div class="row">
+                          <div class="col-sm-6 col-lg-3 box-part-4">
+                            <div class="card text-center">
+                              <div class="pic">
+                                <div class="overlay">
+                                    <div class="text text-part-4"  style="font-size: 20px">See more</div>
+                                </div>
+                                <a href="#">
+                                    <img src="img/halong.jpg" height="200px" class="card-img-top image" alt="...">
+                                </a>
+                            </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Vịnh Hạ Long</h5>
+                                  <p class="card-text">Ha Long Bay là một trong những nơi tốt nhất để ghé thăm trên thế giới là Di sản Thế giới được UNESCO công nhận.</p>
+                                  <a href="#" class="btn btn-success">Đặt ngay</a>
+                                </div>
+                              </div>
+                          </div>
+                          
+                          <div class="col-sm-6 col-lg-3  box-part-4">
+                            <div class="card text-center">
+                              <div class="pic">
+                                <div class="overlay">
+                                    <div class="text text-part-4"  style="font-size: 20px">See more</div>
+                                </div>
+                                <a href="#">
+                                    <img src="img/hue.jpg" height="200px" class="card-img-top image" alt="...">
+                                </a>
+                            </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Huế</h5>
+                                  <p class="card-text">Là một trong những thành phố lịch sử nhất của Việt Nam, Huế có rất nhiều di tích từ thời các vua Nguyễn thế kỷ 19.</p>
+                                  <a href="#" class="btn btn-success">Đặt ngay</a>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-6 col-lg-3  box-part-4">
+                            <div class="card text-center">
+                              <div class="pic">
+                                <div class="overlay">
+                                    <div class="text text-part-4"  style="font-size: 20px">See more</div>
+                                </div>
+                                <a href="#">
+                                    <img src="img/dalat.jpg" height="200px" class="card-img-top image" alt="...">
+                                </a>
+                            </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Đà Lạt</h5>
+                                  <p class="card-text">Đà Lạt được mệnh danh là thiên đường du lịch. Một xứ sở của các loài hoa thi nhau đua sắc thắm, vừa ảo diệu mơ màng vừa bí ẩn.</p>
+                                  <a href="#" class="btn btn-success">Đặt ngay</a>
+                                </div>
+                              </div>
+                          </div>
+                          
+                          <div class="col-sm-6 col-lg-3  box-part-4">
+                              <div class="card text-center">
+                                <div class="pic">
+                                  <div class="overlay">
+                                      <div class="text text-part-4"  style="font-size: 20px">See more</div>
+                                  </div>
+                                  <a href="#">
+                                    <img src="img/thuysi.jpg" height="200px" class="card-img-top image" alt="...">
+                                  </a>
+                              </div>
+                                  <div class="card-body">
+                                    <h5 class="card-title">Thụy Sĩ</h5>
+                                    <p class="card-text"> Thụy Sĩ xứng đáng là một trong những địa điểm được rất nhiều người ao ước đặt chân đến 1 lần trong cuộc đời.</p>
+                                    <a href="#" class="btn btn-success">Đặt ngay</a>
+                                  </div>
+                                </div>
+                          </div>
+                      </div>
+                    <!-- part-5 -->
+                    <div class="part-5">
+                        <h2 class="text-center py-3">Phản hồi của khách hàng</h2>
+                        <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item item-part-5 active">
+                              <div class="box-part-5 col-sm-6 col-lg-4">
+                                <div class="container-content-box-5 text-center py-3">
+                                    <i class="fa fa-user-circle"></i>
+                                    <h3>Lê Vân</h3>
+                                    <p>Dịch vụ quá tuyệt vời</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="carousel-item item-part-5">
+                              <div class="box-part-5 col-sm-6 col-lg-4">
+                                <div class="container-content-box-5  text-center py-3">
+                                    <i class="fa fa-user-circle"></i>
+                                    <h3>Vân Trang</h3>
+                                    <p>Tour du lịch vừa rẻ, hướng dẫn viên nhiệt tình</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="carousel-item item-part-5">
+                              <div class="box-part-5 col-sm-6 col-lg-4">
+                                <div class="container-content-box-5 text-center py-3">
+                                    <i class="fa fa-user-circle"></i>
+                                    <h3>Tuấn Anh</h3>
+                                    <p>Lựa chọn Paradife Of Traveling là điều đúng đắn của tôi</p>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                    </div>
+            </div>
+            </div>
+            <!-- part-6 -->
+              <div class="part-6">
+                <div class="container">
+                  <h3 class="py-3 text-center">Đăng ký để nhận thông báo?</h3>
+                <form>
+                  <div class="form-group row text-center py-3">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input  style="box-shadow: none; width: 70%; margin-left: 50px" type="text" class="form-control" placeholder="email@example.com" >
+                    </div>
+                  </div>
+                  <div class="form-group row text-center py-3">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                      <input style="box-shadow: none; width: 70%; margin-left: 50px" type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    </div>
+                  </div>
+                </form>
+              </div>
+                </div>
+            </div>
+            <div class="account" onclick="testAccount()">
+              <i class="fa fa-user" style="color: black; font-size: 36px;"></i>
+              <div id="thongBao" class="text-center">
+                <h1>Hello</h1>
+                <p id="tenUser"></p>
+                <button onclick="logout()" class="btn btn-success">đăng xuất</button>
+              </div>
+            </div>
+            <div class="container-fluid bg-dark">
+              <div class="footer">
+                <div class="container">
+                  <div class="row " style="color: white;">
+                    <div class="col-sm">
+                      <img src="./logo2-removebg-preview.png" height="100px" class="p-3 mt-5" alt="">
+                  </div>
+                    <div class="col-sm">
+                      <h3 class="pt-3 pb-2 address">Địa chỉ</h3>
+                      <p style="color: #a1a1a1">District 1, Tp Ho Chi Minh, Vietnam</p>
+                      <h3 class="pt-3 pb-2 address">Điện thoại</h3>
+                      <p style="color: #a1a1a1">1900 1111</p>
+                      <h3 class="pt-3 pb-2 address">Email</h3>
+                      <p style="color: #a1a1a1">vvttravel@gmail.com</p>
+                      <h3 class="py-3 pb-2 address">Theo dõi chúng tôi</h3>
+                      <div class="d-flex icon-part-6" style="font-size: 26px;">
+                        <a href="#"><i class="fa fa-youtube" style="color: red;"></i></a>
+                        <a href="#"><i class="fa fa-instagram" style="background: linear-gradient(pink,#FF0033, gold); color: white ; border-radius: 3px;"></i></a>
+                        <a href="#"><i class="fa fa-facebook" style="color: #3333FF;"></i></a>
+                        <a href="#"><i class="fa fa-twitter" style="color: #00FFFF;"></i></a>
+                        
+                      </div>
+                    </div>
+                    <div class="col-sm">
+                      <div class="mapouter"><div class="gmap_canvas"><iframe width="400" height="400" style="padding-top: 50px;" id="gmap_canvas" src="https://maps.google.com/maps?q=Tp%20Ho%20Chi%20Minh,%20Vietnam&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies2.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+                
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,509 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.sticky-top {
+  position: -webkit-sticky;
+}
+.header {
+  background-image: url(https://cdn.pixabay.com/photo/2018/08/12/15/29/hintersee-3601004_1280.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 620px;
+  background-position: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-clip-path: ellipse(72% 62% at 51% 27%);
+          clip-path: ellipse(72% 62% at 51% 27%);
+  z-index: 1;
+}
+
+.header .z-index {
+  position: relative;
+  z-index: 2;
+}
+
+.header .curtain {
+  opacity: .2;
+  width: 100%;
+  height: 620px;
+  position: absolute;
+  z-index: -1;
+  background-color: black;
+}
+
+.header .nav-link {
+  color: white !important;
+}
+
+.header .nav-link:hover {
+  color: green !important;
+}
+
+.header .nav-link:active {
+  color: #2DC071 !important;
+}
+
+.header .active {
+  color: green !important;
+}
+
+.header .navbar-toggler {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.header .text {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  width: 50%;
+}
+
+.header .text a {
+  color: white;
+  letter-spacing: .7px;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: larger;
+  height: 0;
+}
+
+.header .text ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .text ul li {
+  margin-top: 40px;
+  margin-right: 30px;
+  margin-left: 40px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.header .text a i {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  color: white;
+}
+
+.header .text a:hover i {
+  color: teal;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.header .content-header {
+  height: 100px;
+  width: 30%;
+  margin-left: 33%;
+  margin-top: 10%;
+}
+
+.header .btn-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .btn-header img {
+  position: absolute;
+  top: -13%;
+}
+
+.header .content-header h2 {
+  font-size: xx-large;
+  color: white;
+}
+.header .btn-header input {
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 50px;
+  padding: 5px;
+  padding-left: 10px;
+  color: white;
+  border: black solid 2px;
+  outline: none;
+  background: none;
+}
+
+.header .btn-header button {
+  width: 13%;
+  height: 40px;
+  margin-left: 3px;
+  margin-top: 8px;
+  border-radius: 100%;
+  background-color: white;
+  border: none;
+  outline: none;
+  -webkit-transition: ease-in 0.4s;
+  transition: ease-in 0.4s;
+  -webkit-box-shadow: inset 0 0 0 0 green;
+          box-shadow: inset 0 0 0 0 green;
+}
+
+.header .btn-header button:hover {
+  -webkit-box-shadow: inset 0px 0px 50px 0px green;
+          box-shadow: inset 0px 0px 50px 0px green;
+}
+
+.header .navbar-nav {
+  padding-left: 50%;
+  font-size: 20px;
+}
+/* body */
+.body .navbar-nav {
+  padding-left: 20%;
+}
+.nav-phu {
+  margin-left: 220px;
+}
+.left {
+  width: 50%;
+}
+.right {
+  width: 50%;
+}
+h2 {
+  position: relative;
+  color: green;
+}
+h2::before{
+  content: " ";
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  bottom: 2px;
+  transform: rotate(45deg);
+  left: 49%;
+  position: absolute;
+
+}
+h2::after {
+  content: " ";
+  width: 20%;
+  height: 8px;
+  background-color: green;
+  bottom: -2px;
+  left: 40%;
+  border-radius: 5px;
+  position: absolute;
+  padding-bottom: 10px;
+}
+.box-part-2 {
+  box-shadow: (0, 0, 0, 0.5);
+}
+.card-part-2 {
+  margin-bottom: 20px;
+}
+.pictures {
+  margin-left: 50px;
+}
+
+.image {
+  display: block;
+  transition: .8s;
+}
+.pic {
+  position: relative;
+  width: 200px;
+  margin-left: 50px;
+  transition: .8s;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .8s ease;
+}
+
+.pic:hover .overlay {
+  opacity: 1;
+}
+.pic:hover .image {
+  opacity: .3;
+}
+.pic a {
+  text-decoration: none;
+  color: black;
+}
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.part-5 {
+  width: 100%;
+  height: 300px;
+}
+.box-part-5 {
+  box-shadow: 0 0 4px 2px rgba(78, 78, 78, 0.733);
+  border: solid 2px black;
+  background: linear-gradient(rgb(126 217 142), rgb(19 215 94) , rgb(102 237 49), #65e316);
+  border-radius: 5px;
+  width: 100%;
+  margin-left: 20px;
+}
+.box-part-5 i {
+  font-size: 70px;
+}
+.box-part-5 p {
+  text-align: center;
+  margin-top: 30px;
+  font-style: italic;
+}
+.part-4 .pic {
+  width: 100%;
+  margin-left: 0px;
+}
+.text-part-4 {
+  border: black 2px solid;
+  padding: 2px;
+}
+.item-part-5 {
+  width: 50%;
+  margin-left: 250px;
+}
+.container-content-box-5 {
+  width: 100%;
+}
+.address {
+  position: relative;
+}
+.address::after {
+  content: " ";
+  width: 20%;
+  height: 2px;
+  background-color: green;
+  bottom: -2px;
+  left: 0;
+  border-radius: 5px;
+  position: absolute;
+}
+.part-6 {
+  height: 300px;
+  color: white;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(https://scr.vn/wp-content/uploads/2020/07/%E1%BA%A3nh-n%E1%BB%81n-c%E1%BB%B1c-%C4%91%E1%BB%99c-d%C3%A1o.jpg);
+}
+.icon-part-6 i {
+  margin-right: 10px;
+
+}
+.account {
+  width: 75px;
+  height: 75px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 20%;
+  left: 3%;
+}
+#thongBao {
+  background-image: url(https://inlonggia.com/wp-content/uploads/Background-vector-dep.jpg);
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  bottom: 20%;
+  left: 7%;
+  display: none;
+  color: white;
+  border-radius: 10px;
+  
+}
+@media only screen and (max-width: 767px) {
+  .header .btn-header button {
+    width: 13%;
+  }
+  .header .navbar-nav {
+    padding-left: 10%;
+  }
+  .body .navbar-nav {
+    margin-right: 15% ;
+  }
+  .nav-phu {
+    margin-left: 0;
+  }
+  .header .content-header {
+    width: 60%;
+    margin-top: 20%!important;
+    margin-left: 23%!important;
+  }
+  .pictures img {
+    width: 100px;
+    height: 100px;
+  }
+  .pictures {
+    margin-left: 25px!important;
+    margin-top: 50px;
+  }
+  .pic {
+    margin-left: 0;
+  }
+  .nutbam-manHinhNghieng {
+    position: absolute;
+    left: -50px;
+  }
+  .nutbam-manHinhNghieng2 {
+    position: absolute;
+    right: -50px;
+  }
+  .text {
+    font-size: 14px!important;
+  }
+  .item-part-5 {
+    margin-left: 110px;
+  }
+  .gmap_canvas {
+    height: 300px!important;
+    width: 500px!important;
+  }
+  .mapouter {
+    height: 350px;
+    width: 600px;
+}
+iframe{
+  width: 100%;
+}
+}
+
+@media only screen and (max-width: 576px) {
+  .header .navbar img {
+    width: 100px;
+  }
+  .pictures {
+    margin-left: 90px!important;
+  }
+  .header .navbar-nav {
+    padding-left: 0%;
+  }
+  .header .active {
+    color: green;
+  }
+  .header .nav-link-main {
+    color: black;
+    margin: 15px 0 15px 0;
+  }
+  .header .content-header {
+    width: 300px;
+    height: 100px;
+    margin-top: 50%!important;
+    margin-left: 10%!important;
+  }
+  .content-header {
+    width: 100%;
+  }
+  .header .btn-header button {
+    width: 13%;
+  }
+  .header .btn-header input {
+    width: 100%;
+  }
+  .body .navbar-nav {
+    padding-left: 10%;
+  }
+  .nav-phu {
+    margin-left: 0;
+  }
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  h2::before{
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    bottom: 2px;
+    transform: rotate(45deg);
+    left: 47%;
+    position: absolute;
+    z-index: -10;
+  
+  }
+  h2::after {
+    content: " ";
+    width: 50%;
+    height: 6px;
+    background-color: green;
+    bottom: 0;
+    left: 25%;
+    border-radius: 5px;
+    position: absolute;
+  }
+  .pic {
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .nutbam-manHinhNghieng, .nutbam-manHinhNghieng2 {
+    height: 100%!important;
+    background-color: rgba(0, 0, 0, 0.1)!important;
+  }
+  .nutbam-manHinhNghieng {
+    left: 0;
+  }
+  .nutbam-manHinhNghieng2 {
+    right: 0;
+  }
+  .box-part-5 {
+    width: 70%;
+    margin-left: 55px;
+    margin-bottom: 20px;
+  }
+  .box-part-4 {
+    width: 70%;
+    margin-left: 55px;
+    margin-bottom: 20px;
+  }
+  .item-part-5 {
+    margin-left: 0px;
+    width: 100%;
+  }
+  .gmap_canvas {
+    width: 300px!important;
+    height: 300px!important;
+  }
+  #thongBao {
+    bottom: 25%;
+  }
+  .account {
+    bottom: 15%;
+  }
+}
